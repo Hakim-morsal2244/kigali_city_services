@@ -5,23 +5,15 @@ A cross-platform Flutter application for managing and browsing city listings, wi
 Table of Contents
 
 Features
-
 Screenshots / Demo
-
 Getting Started
-
 Firebase Setup
-
 Firestore Database Structure
-
 State Management
-
 Dependencies
 
 Author
-
 Features
-
 Anonymous user authentication using Firebase
 
 Create, edit, and delete listings
@@ -34,31 +26,12 @@ Embedded map view with location display
 
 Cross-platform support: Android, Windows, macOS
 
-Screenshots / Demo
-
-Replace these placeholders with actual images or GIFs from your demo video.
-
-Home screen with listings
-
-Creating a new listing
-
-Editing and deleting a listing
-
-Listing detail page
-
-Embedded map view
-
 Getting Started
-
 Clone the repository:
-
 git clone https://github.com/Hakim-morsal2244/kigali_city_services.git
 cd kigali_city_services
-
 Install dependencies:
-
 flutter pub get
-
 Run the app on your platform:
 
 flutter run -d chrome   # For web
@@ -119,4 +92,5 @@ Author
 Morsal Hakim
 
 GitHub: Hakim-morsal2244
+
 Email: m.hakim@alustudent.com
