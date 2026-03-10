@@ -82,6 +82,8 @@ Use the map to locate nearby services
 
 Edit or delete your listings
 
+
+
 📂 Project Structure
 lib/
  ├─ models/             # Data models
@@ -93,6 +95,10 @@ lib/
 assets/                  # Images, icons, fonts
 pubspec.yaml             # Project configuration
 💻 Technologies
+
+
+
+
 
 Flutter
 
