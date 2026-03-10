@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services' // Firebase plugin
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 34
@@ -34,23 +35,11 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"
-
-    // Flutter dependencies
     implementation "com.google.android.material:material:1.10.0"
-
-    // Firebase BoM (Bill of Materials) ensures all Firebase SDKs are compatible
     implementation platform('com.google.firebase:firebase-bom:34.10.0')
-
-    // Firebase products you need
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
-
-    // Optional: For maps
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
-
-    // Multidex support
     implementation 'androidx.multidex:multidex:2.0.1'
 }
-
-// Make sure to sync Gradle after this
