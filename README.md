@@ -1,96 +1,124 @@
-Kigali City Services
+Kigali City Services 🏙️✨
 
-A cross-platform Flutter application for managing and browsing city listings, with real-time Firebase backend integration.
+Kigali City Services is a Flutter mobile application designed to help residents and visitors of Kigali, Rwanda, easily access city services, explore local businesses, and manage service listings.
 
-Table of Contents
+🚀 Table of Contents
 
-Features
-Screenshots / Demo
-Getting Started
-Firebase Setup
-Firestore Database Structure
-State Management
-Dependencies
+🌟 Overview
 
-Author
-Features
-Anonymous user authentication using Firebase
+✨ Features
 
-Create, edit, and delete listings
+📸 Screenshots
 
-Search and filter listings in real-time
+🛠 Installation
 
-Listing details page
+📖 Usage
 
-Embedded map view with location display
+📂 Project Structure
 
-Cross-platform support: Android, Windows, macOS
+💻 Technologies
 
-Getting Started
+🤝 Contributing
+
+📄 License
+
+🌟 Overview
+
+Kigali is a rapidly growing city, and residents need a reliable way to find services, businesses, and facilities. This app provides:
+
+✅ An organized directory of services
+
+✅ Service listing management for providers
+
+✅ Map integration for easy navigation
+
+✅ Secure user authentication
+
+It’s perfect for citizens, service providers, and visitors alike.
+
+✨ Features
+Feature	Description	Emoji
+User Authentication	Sign up, log in, email verification, and secure profile management	🔐
+Listings CRUD	Create, read, update, and delete service listings	📝
+Maps & Navigation	Google Maps integration to find services nearby	🗺️
+Categories & Filters	Search services by category or tag	🔎
+Real-time Data	Powered by Firebase Firestore for instant updates	⚡
+Offline Support	Cache listings for offline use	📶
+Responsive UI	Intuitive design for Android devices	📱
+📸 Screenshots
+Home	Add Listing	Map View
+
+	
+	
+
+Replace placeholders with actual screenshots from your screenshots/ folder.
+
+🛠 Installation
+
 Clone the repository:
+
 git clone https://github.com/Hakim-morsal2244/kigali_city_services.git
 cd kigali_city_services
+
 Install dependencies:
+
 flutter pub get
-Run the app on your platform:
 
-flutter run -d chrome   # For web
-flutter run -d windows  # For Windows
-flutter run -d macos    # For macOS
-Firebase Setup
+Run the app on an Android device or emulator:
 
-Create a Firebase project and register your app for Android, Windows, and macOS.
+flutter run
 
-Download google-services.json (Android) and ensure firebase_options.dart is generated via FlutterFire CLI.
+Make sure your Flutter SDK, Android SDK, and emulator/device are properly set up.
 
-Place firebase_options.dart in the lib/ folder.
+📖 Usage
 
-Initialize Firebase in main.dart:
+Sign up as a new user
 
-import 'firebase_options.dart';
-import 'package:firebase_core/firebase_core.dart';
+Verify your email
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const MyApp());
-}
-Firestore Database Structure
-listings (collection)
-  -> documentId
-      - title: String
-      - description: String
-      - createdBy: String (User UID)
-      - createdAt: Timestamp
+Browse services or add your own listings
 
-Real-time updates via StreamBuilder
+Use the map to locate nearby services
 
-Each document represents a listing
+Edit or delete your listings
 
-State Management
+📂 Project Structure
+lib/
+ ├─ models/             # Data models
+ ├─ providers/          # State management providers
+ ├─ screens/            # UI screens
+ ├─ services/           # Firebase Auth & Firestore services
+ ├─ widgets/            # Reusable UI components
+ ├─ main.dart           # App entry point
+assets/                  # Images, icons, fonts
+pubspec.yaml             # Project configuration
+💻 Technologies
 
-Used setState for simple UI updates
+Flutter
 
-StreamBuilder listens to Firestore collection changes for real-time UI updates
+Firebase Authentication
 
-Lightweight and straightforward for this small-scale project
+Firebase Firestore
 
-Dependencies
+Android SDK
 
-firebase_core: ^3.15.2
+🤝 Contributing
 
-cloud_firestore: ^5.0.0
+Contributions are welcome!
 
-firebase_auth: ^6.2.0
+Fork the repository
 
-Flutter SDK (>=3.0.0)
+Create a new branch: git checkout -b feature-name
 
-Author
+Make your changes
 
-Morsal Hakim
+Commit: git commit -m "Add feature"
 
-GitHub: Hakim-morsal2244
+Push: git push origin feature-name
 
-Email: m.hakim@alustudent.com
+Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
